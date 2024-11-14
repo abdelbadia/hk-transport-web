@@ -1,0 +1,27 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master  # ou la branche de votre choix
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # ou la version de Node.js que vous utilisez
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      env:
+        NODE_OPTIONS: --openssl-legacy-provider
+      run: npm run build
