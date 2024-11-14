@@ -3,13 +3,13 @@ import './Style/App.css';
 import React from 'react';
 import './Style/style.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Vérifie que tu as bien importé Router, Route et Routes
-import Home from './components/Home';
-import Clients from './components/Clients';
-import ClientDetails from './components/ClientDetails';
+import Home from './components/Home.js';
+import Clients from './components/Clients.js';
+import ClientDetails from './components/ClientDetails.js';
 /*import Dashboard from './components/Dashboard';
 import Facture from './components/Facture';
 */
-import Navbar from './components/Navbar';  // Importation du Navbar
+import Navbar from './components/Navbar.js';  // Importation du Navbar
 
 function App() {
   return (

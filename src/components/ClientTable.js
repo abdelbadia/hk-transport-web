@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getClients } from '../services/clientService';
+import { getClients } from '../services/clientService.js';
 import '../Style/clients.css';
 
 const ClientTable = ({ onSelectClient }) => {

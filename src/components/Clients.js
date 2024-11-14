@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ClientTable from './ClientTable';
-import ClientForm from './ClientForm';
+import ClientTable from './ClientTable.js';
+import ClientForm from './ClientForm.js';
 import '../Style/clients.css';
 
 const Clients = () => {

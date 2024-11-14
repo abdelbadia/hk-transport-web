@@ -1,6 +1,6 @@
 // src/components/TransporteurTable.js
 import React, { useState, useEffect } from 'react';
-import { getTransporteurs } from '../services/transporteurService';
+import { getTransporteurs } from '../services/transporteurService.js';
 import '../Style/transporteurs.css';
 
 const TransporteurTable = ({ onSelectTransporteur }) => {

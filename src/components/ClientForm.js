@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { addClient, updateClient, deleteClient } from '../services/clientService';
+import { addClient, updateClient, deleteClient } from '../services/clientService.js';
 import '../Style/clients.css';
 
 const ClientForm = ({ selectedClient, onRefresh }) => {

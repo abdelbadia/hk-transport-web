@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; // Pour récupérer les paramètres de l'URL
-import { getClientById } from '../services/clientService'; // Assure-toi d'avoir cette fonction
+import { getClientById } from '../services/clientService.js'; // Assure-toi d'avoir cette fonction
 import '../Style/style.css'; 
 
 const ClientDetails = () => {
