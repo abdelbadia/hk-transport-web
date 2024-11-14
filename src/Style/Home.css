@@ -1,0 +1,90 @@
+/* Style de la page Home */
+.home {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Style du bouton menu hamburger */
+  .menu-button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Style du menu arborescent */
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    z-index: 1000;
+  }
+  
+  /* Style des liens du menu */
+  .menu h2 {
+    margin-top: 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+  }
+  
+  .menu a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Ajouter des transitions pour le menu */
+  .menu a:active {
+    background-color: #bbb;
+  }
+
+  /* Style pour le sous-menu */
+.submenu {
+    display: none; /* Caché par défaut */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li:hover .submenu {
+    display: block; /* Affiche le sous-menu lorsqu'on survole l'élément parent */
+    padding-left: 20px;
+  }
+  
+  .submenu li {
+    margin: 5px 0;
+  }
+  
+  .submenu a {
+    color: #555;
+  }
+  

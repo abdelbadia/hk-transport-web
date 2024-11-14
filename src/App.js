@@ -1,24 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+import './Style/App.css';
+import React from 'react';
+import './Style/style.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Vérifie que tu as bien importé Router, Route et Routes
+import Home from './components/Home';
+import Clients from './components/Clients';
+import ClientDetails from './components/ClientDetails';
+/*import Dashboard from './components/Dashboard';
+import Facture from './components/Facture';
+*/
+import Navbar from './components/Navbar';  // Importation du Navbar
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+         <Navbar />  {/* Menu toujours visible */}
+      <Routes>
+        <Route path="/" element={<Home />} />   {/* Route par défaut */}
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/:id" element={<ClientDetails />} />
+      </Routes>
+  </Router>
   );
 }
 
