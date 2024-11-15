@@ -1,8 +1,12 @@
 import axios from 'axios';
+//process.env.REACT_APP_API_URL || 
+const API_URL = 'https://hktransportapi-dvfvanhgeedmafak.canadacentral-01.azurewebsites.net/api';
+//const API_URL = 'http://localhost:5097/api/clients';
 
-const API_URL = process.env.REACT_APP_API_URL;
 
 export const getClients = async () => {
+    console.log("URL API utilisée :", process.env.REACT_APP_API_URL);
+    console.log("URL API utilisée API_URL :", API_URL);
     return await axios.get(API_URL);
 };
 
