@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://localhost:7007/api/clients';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const getClients = async () => {
     return await axios.get(API_URL);
